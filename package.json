@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npx ng serve --open",
     "build": "npx ng build",
-    "test": "npx ng test"
+    "test": "npx ng test",
+    "validate": "node scripts/validate.js"
   },
   "dependencies": {
     "@angular/animations": "~16.0.0",
@@ -20,9 +21,14 @@
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~16.0.0",
     "@angular/cli": "~16.0.0",
+    "@angular-devkit/build-angular": "~16.0.0",
     "@angular/compiler-cli": "~16.0.0",
-    "typescript": "~5.0.0"
+    "typescript": "~5.0.4",
+    "karma": "~6.4.0",
+    "jasmine-core": "~4.5.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0"
   }
 }
