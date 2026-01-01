@@ -36,6 +36,8 @@
   },
   "defaultProject": "angular-app",
   "cli": {
+      "root": "",
+  "sourceRoot": "src",
     "analytics": "9b806236-89d6-4286-8012-4577e095701e"
   }
 }
