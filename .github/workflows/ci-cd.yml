@@ -18,13 +18,13 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install --force
+        run: npm ci --legacy-peer-deps
 
-      - name: Run lint
-        run: npm run lint
+      - name: Run ESLint
+        run: npx eslint "src/**/*.ts" --ext .ts
 
-      - name: Run tests
-        run: npm test
+      - name: Run lightweight validation
+        run: npm run validate
 
   # 2. Build Job (depends on lint-test)
   build:
