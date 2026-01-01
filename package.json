@@ -7,7 +7,7 @@
     "build": "npx ng build",
     "test": "npx ng test",
     "validate": "node scripts/validate.js",
-    "lint": "ng lint"
+    "lint": "eslint \"src/**/*.ts\" --ext .ts"
   },
   "dependencies": {
     "@angular/animations": "~16.0.0",
@@ -30,6 +30,9 @@
     "jasmine-core": "~4.5.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0"
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0"
   }
 }
